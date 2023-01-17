@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 3</title>
+</head>
+<body>
+    <section id="calculo">
+        <h1>Antecessor e sucessor</h1>
+        <button onclick="numerador()">Digite um numero</button>    
+    </section>
+</body>
+
+    <script>
+        function numerador() {
+            let valor = Number(window.prompt(`Digite um numero :`))
+
+            const resultado = window.document.getElementById(`calculo`)
+            resultado.innerHTML = `<p>O antecessor de ${valor} é ${valor - 1}</p>`
+            resultado.innerHTML += `<p>O sucessor de ${valor} é ${valor +1}</p>`
+        }
+    </script>
+ 
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <section id="valor">
+        <h1>Valores</h1>
+        <button onclick="calculo()">Digite um valor</button>
+    </section>
+</body>
+
+    <script>
+        function calculo(){
+            let valor1 = Number(window.prompt(`Qual primeiro valor?`))
+            let valor2 = Number(window.prompt(`Qual segundo valor?`))
+            const media = valor1 + valor2
+            
+            const resultado = window.document.getElementById(`valor`)
+            resultado.innerHTML = `Digite um valor: ${valor1}`
+            resultado.innerHTML = `Digite outro valor: ${valor2}`
+            resultado.innerHTML = `A soma entre ${valor1} e ${valor2} é igual a ${media}`
+        }
+    </script>
+</html>
